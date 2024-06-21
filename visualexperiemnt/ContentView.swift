@@ -5,57 +5,37 @@
 //  Created by Victoria Petrova on 21/06/2024.
 //
 
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+*/
+
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
 
+    @State var counter: Int = 0
+    @State var origin: CGPoint = .zero
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
+        VStack {
+            let fill = ShaderLibrary.Stripes(
+                .float(12),
+                .colorArray([
+                    .red, .orange, .yellow, .green, .blue, .indigo
+                ])
+            )
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            Circle().fill(fill)
+                .modifier(RippleEffect(at: origin, trigger: counter))
+                .onTapGesture { location in
+                    origin = location
+                    counter += 1
+                }
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+        .padding()
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

@@ -9,18 +9,24 @@
 /* Begin PBXBuildFile section */
 		D4D2B5482C25DF26001D9DBD /* visualexperiemntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */; };
 		D4D2B54A2C25DF26001D9DBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5492C25DF26001D9DBD /* ContentView.swift */; };
-		D4D2B54C2C25DF26001D9DBD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B54B2C25DF26001D9DBD /* Item.swift */; };
 		D4D2B54E2C25DF27001D9DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D2B54D2C25DF27001D9DBD /* Assets.xcassets */; };
 		D4D2B5512C25DF27001D9DBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D2B5502C25DF27001D9DBD /* Preview Assets.xcassets */; };
+		D4D2B5582C25DF57001D9DBD /* Stripes.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5572C25DF57001D9DBD /* Stripes.metal */; };
+		D4D2B55A2C25DF68001D9DBD /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5592C25DF68001D9DBD /* Stripes.swift */; };
+		D4D2B55C2C25DFD5001D9DBD /* Ripple.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */; };
+		D4D2B55E2C25E030001D9DBD /* Ripple.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B55D2C25E02F001D9DBD /* Ripple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4D2B5442C25DF26001D9DBD /* visualexperiemnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visualexperiemnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visualexperiemntApp.swift; sourceTree = "<group>"; };
 		D4D2B5492C25DF26001D9DBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4D2B54B2C25DF26001D9DBD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D4D2B54D2C25DF27001D9DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D2B5502C25DF27001D9DBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4D2B5572C25DF57001D9DBD /* Stripes.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Stripes.metal; sourceTree = "<group>"; };
+		D4D2B5592C25DF68001D9DBD /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
+		D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ripple.metal; sourceTree = "<group>"; };
+		D4D2B55D2C25E02F001D9DBD /* Ripple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +59,14 @@
 		D4D2B5462C25DF26001D9DBD /* visualexperiemnt */ = {
 			isa = PBXGroup;
 			children = (
+				D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */,
 				D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */,
 				D4D2B5492C25DF26001D9DBD /* ContentView.swift */,
-				D4D2B54B2C25DF26001D9DBD /* Item.swift */,
 				D4D2B54D2C25DF27001D9DBD /* Assets.xcassets */,
 				D4D2B54F2C25DF27001D9DBD /* Preview Content */,
+				D4D2B5572C25DF57001D9DBD /* Stripes.metal */,
+				D4D2B5592C25DF68001D9DBD /* Stripes.swift */,
+				D4D2B55D2C25E02F001D9DBD /* Ripple.swift */,
 			);
 			path = visualexperiemnt;
 			sourceTree = "<group>";
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D2B55E2C25E030001D9DBD /* Ripple.swift in Sources */,
+				D4D2B5582C25DF57001D9DBD /* Stripes.metal in Sources */,
+				D4D2B55C2C25DFD5001D9DBD /* Ripple.metal in Sources */,
+				D4D2B55A2C25DF68001D9DBD /* Stripes.swift in Sources */,
 				D4D2B54A2C25DF26001D9DBD /* ContentView.swift in Sources */,
-				D4D2B54C2C25DF26001D9DBD /* Item.swift in Sources */,
 				D4D2B5482C25DF26001D9DBD /* visualexperiemntApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,9 +303,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vickipetrova.visualexperiemnt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +336,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vickipetrova.visualexperiemnt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
