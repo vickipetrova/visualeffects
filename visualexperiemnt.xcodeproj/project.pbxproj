@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D47433F52C2ACA8A002372F3 /* WaterDropScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47433F42C2ACA8A002372F3 /* WaterDropScene.swift */; };
+		D47433F72C2ACFF3002372F3 /* RaindDropShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47433F62C2ACFF3002372F3 /* RaindDropShape.swift */; };
 		D4D2B5482C25DF26001D9DBD /* visualexperiemntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */; };
 		D4D2B54A2C25DF26001D9DBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5492C25DF26001D9DBD /* ContentView.swift */; };
 		D4D2B54E2C25DF27001D9DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D2B54D2C25DF27001D9DBD /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D47433F42C2ACA8A002372F3 /* WaterDropScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDropScene.swift; sourceTree = "<group>"; };
+		D47433F62C2ACFF3002372F3 /* RaindDropShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaindDropShape.swift; sourceTree = "<group>"; };
 		D4D2B5442C25DF26001D9DBD /* visualexperiemnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visualexperiemnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visualexperiemntApp.swift; sourceTree = "<group>"; };
 		D4D2B5492C25DF26001D9DBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D47433F32C2ACA76002372F3 /* WaterDrop */ = {
+			isa = PBXGroup;
+			children = (
+				D47433F42C2ACA8A002372F3 /* WaterDropScene.swift */,
+				D47433F62C2ACFF3002372F3 /* RaindDropShape.swift */,
+			);
+			path = WaterDrop;
+			sourceTree = "<group>";
+		};
 		D4D2B53B2C25DF26001D9DBD = {
 			isa = PBXGroup;
 			children = (
@@ -59,14 +72,15 @@
 		D4D2B5462C25DF26001D9DBD /* visualexperiemnt */ = {
 			isa = PBXGroup;
 			children = (
-				D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */,
 				D4D2B5472C25DF26001D9DBD /* visualexperiemntApp.swift */,
 				D4D2B5492C25DF26001D9DBD /* ContentView.swift */,
 				D4D2B54D2C25DF27001D9DBD /* Assets.xcassets */,
 				D4D2B54F2C25DF27001D9DBD /* Preview Content */,
 				D4D2B5572C25DF57001D9DBD /* Stripes.metal */,
+				D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */,
 				D4D2B5592C25DF68001D9DBD /* Stripes.swift */,
 				D4D2B55D2C25E02F001D9DBD /* Ripple.swift */,
+				D47433F32C2ACA76002372F3 /* WaterDrop */,
 			);
 			path = visualexperiemnt;
 			sourceTree = "<group>";
@@ -149,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47433F52C2ACA8A002372F3 /* WaterDropScene.swift in Sources */,
 				D4D2B55E2C25E030001D9DBD /* Ripple.swift in Sources */,
 				D4D2B5582C25DF57001D9DBD /* Stripes.metal in Sources */,
+				D47433F72C2ACFF3002372F3 /* RaindDropShape.swift in Sources */,
 				D4D2B55C2C25DFD5001D9DBD /* Ripple.metal in Sources */,
 				D4D2B55A2C25DF68001D9DBD /* Stripes.swift in Sources */,
 				D4D2B54A2C25DF26001D9DBD /* ContentView.swift in Sources */,
