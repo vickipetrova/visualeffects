@@ -17,6 +17,15 @@
 		D4D2B55A2C25DF68001D9DBD /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B5592C25DF68001D9DBD /* Stripes.swift */; };
 		D4D2B55C2C25DFD5001D9DBD /* Ripple.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */; };
 		D4D2B55E2C25E030001D9DBD /* Ripple.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2B55D2C25E02F001D9DBD /* Ripple.swift */; };
+		D4W700000000000000000003 /* Rain.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000002 /* Rain.metal */; };
+		D4W700000000000000000005 /* RainEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000004 /* RainEffect.swift */; };
+		D4W700000000000000000007 /* Snow.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000006 /* Snow.metal */; };
+		D4W700000000000000000009 /* SnowEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000008 /* SnowEffect.swift */; };
+		D4W70000000000000000000B /* Wind.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4W70000000000000000000A /* Wind.metal */; };
+		D4W70000000000000000000D /* WindEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4W70000000000000000000C /* WindEffect.swift */; };
+		D4W70000000000000000000F /* Sunshine.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4W70000000000000000000E /* Sunshine.metal */; };
+		D4W700000000000000000011 /* SunshineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000010 /* SunshineEffect.swift */; };
+		D4W700000000000000000013 /* WeatherScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4W700000000000000000012 /* WeatherScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,16 @@
 		D4D2B5592C25DF68001D9DBD /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
 		D4D2B55B2C25DFD5001D9DBD /* Ripple.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ripple.metal; sourceTree = "<group>"; };
 		D4D2B55D2C25E02F001D9DBD /* Ripple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripple.swift; sourceTree = "<group>"; };
+		D4W700000000000000000001 /* WeatherNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherNoise.h; sourceTree = "<group>"; };
+		D4W700000000000000000002 /* Rain.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Rain.metal; sourceTree = "<group>"; };
+		D4W700000000000000000004 /* RainEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainEffect.swift; sourceTree = "<group>"; };
+		D4W700000000000000000006 /* Snow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Snow.metal; sourceTree = "<group>"; };
+		D4W700000000000000000008 /* SnowEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowEffect.swift; sourceTree = "<group>"; };
+		D4W70000000000000000000A /* Wind.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Wind.metal; sourceTree = "<group>"; };
+		D4W70000000000000000000C /* WindEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindEffect.swift; sourceTree = "<group>"; };
+		D4W70000000000000000000E /* Sunshine.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sunshine.metal; sourceTree = "<group>"; };
+		D4W700000000000000000010 /* SunshineEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunshineEffect.swift; sourceTree = "<group>"; };
+		D4W700000000000000000012 /* WeatherScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,7 @@
 				D4D2B5592C25DF68001D9DBD /* Stripes.swift */,
 				D4D2B55D2C25E02F001D9DBD /* Ripple.swift */,
 				D47433F32C2ACA76002372F3 /* WaterDrop */,
+				D4W7000000000000000000A0 /* Weather */,
 			);
 			path = visualexperiemnt;
 			sourceTree = "<group>";
@@ -91,6 +111,23 @@
 				D4D2B5502C25DF27001D9DBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4W7000000000000000000A0 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				D4W700000000000000000001 /* WeatherNoise.h */,
+				D4W700000000000000000002 /* Rain.metal */,
+				D4W700000000000000000004 /* RainEffect.swift */,
+				D4W700000000000000000006 /* Snow.metal */,
+				D4W700000000000000000008 /* SnowEffect.swift */,
+				D4W70000000000000000000A /* Wind.metal */,
+				D4W70000000000000000000C /* WindEffect.swift */,
+				D4W70000000000000000000E /* Sunshine.metal */,
+				D4W700000000000000000010 /* SunshineEffect.swift */,
+				D4W700000000000000000012 /* WeatherScene.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +208,15 @@
 				D4D2B55A2C25DF68001D9DBD /* Stripes.swift in Sources */,
 				D4D2B54A2C25DF26001D9DBD /* ContentView.swift in Sources */,
 				D4D2B5482C25DF26001D9DBD /* visualexperiemntApp.swift in Sources */,
+				D4W700000000000000000003 /* Rain.metal in Sources */,
+				D4W700000000000000000005 /* RainEffect.swift in Sources */,
+				D4W700000000000000000007 /* Snow.metal in Sources */,
+				D4W700000000000000000009 /* SnowEffect.swift in Sources */,
+				D4W70000000000000000000B /* Wind.metal in Sources */,
+				D4W70000000000000000000D /* WindEffect.swift in Sources */,
+				D4W70000000000000000000F /* Sunshine.metal in Sources */,
+				D4W700000000000000000011 /* SunshineEffect.swift in Sources */,
+				D4W700000000000000000013 /* WeatherScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
